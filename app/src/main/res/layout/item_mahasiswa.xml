@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="14dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/img_placeholder" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_profile"
+        android:layout_toEndOf="@id/img_profile"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="Nama Mahasiswa" />
+
+    <TextView
+        android:id="@+id/txt_ipk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name"
+        android:layout_toEndOf="@id/img_profile"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_tag"
+        android:textSize="14sp"
+        android:text="IPK" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/img_profile"
+        android:background="@color/gray"/>
+
+</RelativeLayout>
